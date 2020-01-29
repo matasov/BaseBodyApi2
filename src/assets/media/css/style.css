@@ -1,0 +1,30 @@
+#login {
+    background: url(./../images/login-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.btn {border-radius: 0;}
+
+.vh100 {
+    min-height:100vh;
+}
+
+#loginForm {
+    padding: 20px 30px 5px;
+    box-shadow: 0px 0px 10px 0px #dadada;
+    background: #fff;
+}
+
+#loginForm .section-title {
+    border-bottom: 1px solid #17a2b8;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+#loginForm .form-group {
+    margin-bottom: 1.6rem;
+}
+
+#loginForm .space-elements {
+    font-size: .9rem;
+}

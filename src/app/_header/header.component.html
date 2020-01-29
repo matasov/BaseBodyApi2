@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand d-flex justify-content-between">
+	<button type="button" class="sidebar-toggle mr-3" *ngIf="!isCollapse" (click)="sidebarToggle()"><i class="fa fa-bars"></i></button>
+	<div class="btn-group">
+		<button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+			aria-expanded="false">
+			UserName
+		</button>
+		<div class="dropdown-menu dropdown-menu-right">
+			<a class="dropdown-item" href="">My profile</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" >Log Out</a>
+		</div>
+	</div>
+</nav>
+<div class="sidebar sidebar-dark">
+	<app-sidebar></app-sidebar>
+</div>

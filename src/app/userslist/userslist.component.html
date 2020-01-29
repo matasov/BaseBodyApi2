@@ -1,0 +1,50 @@
+<div class="d-flex align-items-stretch flex-column">
+    <app-header></app-header>
+    <div class="content p-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="section-title">Users management</h4>
+            </div>
+            <div class="d-md-flex">
+                <button class="btn btn-info mr-5 mt-3 mb-3"><i class="fa fa-plus"></i> Create new user</button>
+                <form action="" class="search-form form-inline">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <button type="submit" class="btn btn-info">Submit</button>
+                </form>
+            </div>
+            <div class="table-responsive-sm mt-3 mb-2">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">Login</th>
+                            <th scope="col">Full name</th>
+                            <th scope="col">Roles</th>
+                            <th scope="col"  class="text-right">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>UserLogin</td>
+                            <td>Andrey Matasov</td>
+                            <td>NotAdmin</td>
+                            <td class="text-right">
+                                <button class="btn btn-primary btn-sm mr-1"><i class="fa fa-pencil"></i></button>
+                                <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>UserLogin</td>
+                            <td>Andrey Matasov</td>
+                            <td>NotAdmin</td>
+                            <td class="text-right">
+                                <button class="btn btn-primary btn-sm mr-1"><i class="fa fa-pencil"></i></button>
+                                <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<app-footer></app-footer>
+</div>

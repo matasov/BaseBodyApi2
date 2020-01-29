@@ -1,0 +1,32 @@
+<section id="login">
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center vh100">
+            <form [formGroup]="loginForm" class="reg-form" (ngSubmit)="onLoginClick(captchaRef)">
+                <h3 class="section-title text-center">Login form</h3>
+                <div class="form-group">
+                    <label for="formlogin_User">Login</label>
+                    <input formControlName="login" placeholder="Your login" type="text" autocomplete="off" class="form-control"
+					required />
+                </div>
+                <div class="form-group">
+                    <label for="formlogin_User">Password</label>
+                    <input formControlName="password" type="password" class="form-control" placeholder="Your password" value=""
+					autocomplete="off" required>
+                </div>
+                <div class="d-md-flex justify-content-between space-elements">
+                    <div class="form-group form-check mr-4">
+                        <input type="checkbox" class="form-check-input" id="loginForm_RememberMe">
+                        <label class="form-check-label" for="loginForm_RememberMe">Remember me</label>
+                    </div>
+                    <div class="form-group">
+                        <a href="/recovery">Forgot password?</a>
+                    </div>
+                </div>
+                <re-captcha #captchaRef="reCaptcha" (resolved)="resolved($event)" size="invisible"></re-captcha>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-info btn-block" value="Sign In">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
